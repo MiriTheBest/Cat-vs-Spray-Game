@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_IMG_background"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_score"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="000"
+        android:textColor="@color/pink_purple"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="16dp">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_IMG_heart1"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible"
+        app:srcCompat="@drawable/pet_care" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_IMG_heart2"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible"
+        android:layout_marginHorizontal="10dp"
+        app:srcCompat="@drawable/pet_care" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_IMG_heart3"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible"
+        app:srcCompat="@drawable/pet_care" />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="530dp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_cat1"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/cat" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_cat2"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/cat" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_cat3"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/cat" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_cat4"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/cat" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_cat5"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            app:srcCompat="@drawable/cat" />
+
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/main_matrix"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:columnCount="5"
+        android:rowCount="7">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray1"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray2"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:layout_column="1"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray3"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="0"
+            android:layout_column="2"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray4"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="0"
+            android:layout_column="3"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray5"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="0"
+            android:layout_column="4"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray6"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray7"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray8"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray9"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray10"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray11"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray12"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray13"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray14"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray15"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="2"
+            android:layout_column="4"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray16"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray17"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray18"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray19"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray20"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="3"
+            android:layout_column="4"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray21"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray22"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray23"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray24"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray25"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="4"
+            android:layout_column="4"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray26"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray27"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray28"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray29"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="5"
+            android:layout_column="3"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_spray30"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:visibility="invisible"
+            android:layout_row="5"
+            android:layout_column="4"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/spray1_" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/button_FAB_left"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            app:icon="@drawable/left_arrow"
+            android:visibility="visible"
+            app:iconGravity="start"
+            android:contentDescription="left"
+            android:backgroundTint="@color/pink_purple"
+            />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/button_FAB_right"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_row="6"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            app:icon="@drawable/right_arrow"
+            android:visibility="visible"
+            app:iconGravity="start"
+            android:contentDescription="right"
+            android:backgroundTint="@color/pink_purple"
+            />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/main_matrixRewards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:columnCount="5"
+        android:rowCount="7">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food1"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food2"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food3"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food4"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food5"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:layout_column="4"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food6"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food7"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food8"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food9"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food10"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food11"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food12"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food13"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food14"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food15"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="2"
+            android:layout_column="4"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food16"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food17"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food18"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food19"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food20"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_row="3"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food21"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food22"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food23"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food24"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food25"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="4"
+            android:layout_column="4"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food26"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food27"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food28"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food29"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_column="3"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_food30"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_row="5"
+            android:layout_column="4"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/cat_food" />
+
+    </GridLayout>
+
+
+</RelativeLayout>
