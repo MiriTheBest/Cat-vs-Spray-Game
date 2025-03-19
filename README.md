@@ -1,5 +1,7 @@
 🐱 Cat Racing – Dodge, Collect & Compete! 🚗
+
 📌 Overview
+
 Cat Racing is a fun and engaging endless runner-style racing game where players control a cat instead of a car, dodging obstacles and collecting rewards. The goal is to navigate through a five-lane road, avoid dangerous sprays, and collect food cans to increase the score. Players can control the cat using tilt-based sensor controls or buttons for an immersive experience.
 
 At the end of each session, players can see their best scores along with a Google Maps location showing where the high score was achieved!
@@ -32,20 +34,32 @@ Sensor Mode – Move by tilting the device.
 ✔ Google Maps Integration – Displays the real-world location where the best score was achieved.
 
 🎮 Gameplay Mechanics
+
 Move Left/Right – Tilt or press the arrow buttons to shift lanes.
+
 Avoid Sprays – Hitting a spray bottle removes one heart.
+
 Collect Food Cans – Each food can increases the score.
+
 Track Your Progress – The distance counter records how far the player has traveled.
+
 Compete for High Scores – Try to set the best score and see it appear on the leaderboard!
+
 Location-Based Achievements – The game logs where top scores were set, displaying the location on Google Maps.
 
+
 🖥️ Visual Design
-Cute & Minimalistic – The game features a simple but adorable cat character instead of a car.
-Color-Coded Objects –
+
+Cute & Minimalistic – The game features a simple but adorable cat.
+
 Sprays (obstacles) stand out as hazards.
+
 Food cans appear as collectible bonuses.
+
 Hearts represent remaining lives.
+
 Leaderboard UI – A visually appealing list of top scores and their locations.
+
 Google Maps View – Shows the exact place where a high score was achieved, adding a competitive and interactive element.
 
 ![image](https://github.com/user-attachments/assets/b80d1adb-98bd-4ed0-8c0c-66d4be59ea48)
