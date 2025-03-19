@@ -5,6 +5,7 @@ Cat Racing is a fun and engaging endless runner-style racing game where players 
 At the end of each session, players can see their best scores along with a Google Maps location showing where the high score was achieved!
 
 🚀 Features
+
 ✔ Tilt Controls & Button Mode – Players can tilt their device left or right to move, or use on-screen buttons for precise movement.
 
 ✔ Dynamic Racing Track – A wider five-lane road for more challenging gameplay.
